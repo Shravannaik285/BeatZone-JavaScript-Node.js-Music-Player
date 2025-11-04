@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeatZone 🎵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="player-header">
+    <h1>BeatZone 🎵</h1>
+  </header>
+
+  <div class="song-info">
+    <img id="cover" src="2.png" alt="Album cover" width="200" height="250">
+    <h2 id="title">Dil ki Awaz</h2>
+    <h4 id="artist">AI Generated</h4>
+  </div>
+
+  <audio id="audio" src="Dil ki awaz.mp3"></audio>
+
+  <div class="progress-container">
+    <span id="currentTime">0:00</span>
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <span id="duration">3:45</span>
+  </div>
+
+  <div class="controls">
+    <button id="prev">⏮</button>
+    <button id="play">▶️</button>
+    <button id="next">⏭</button>
+    <button id="shuffle">🔀</button>
+    <button id="repeat">🔁</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
